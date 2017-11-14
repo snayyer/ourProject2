@@ -38,10 +38,11 @@ li a {
   text-decoration: none; /* remove underline */
 }
 li a:hover { /* mouse over */
-  background-color: #388E3C;
+  background-color: white;
+  color: black;
 }
 
-/* table */
+/* timetable */
 table {
   border-collapse: collapse;
   text-align: center;
@@ -77,7 +78,7 @@ a:hover { color: white; text-decoration: none;}
 /* Schedule Header */
 .scheduleHeader {
   padding: 30px 25px;
-  background: #CC6767;
+  background: #D67575;
   text-align: center;
 }
 .scheduleHeader {
@@ -88,25 +89,40 @@ a:hover { color: white; text-decoration: none;}
 }
 
 /* Weekdays (Mon-Sat) */
+.timetable {
+  margin: auto;
+}
 th {
-  font-size: larger;
   padding: 10px;
   font-weight: bold;
+  letter-spacing: 1px;
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
   border-top: 1px solid #ffffff;
-  border-left: 1px solid #ffffff;
+  border-left: 1px solid #cccccc;
   background: #eeeeee;
   margin: auto;
 }
 
-td:hover {
-  background-color: #F08080;
+td {
+  padding: 1em;
+  border-left: 1px solid #cccccc;
 }
 
-@media screen and (max-width: 480px) {
+td:hover {
+  background-color: #eeeeee;
+}
+
+@media screen and (max-width: 680px) {
+  .timetable {
+    overflow: scroll;
+  }
   table {
-    overflow-x: auto;
-	display: block;
+    
+  }
+  th {
+  }
+  td {
+    font-size: 0.8em;
   }
 }
