@@ -9,7 +9,6 @@ body {
 header > div {
   background-color: black;
   color: white;
-    /*font-size: 20px;*/
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: left;
@@ -30,6 +29,7 @@ nav > ul {
 li {
   text-align: center;
   display: inline-block;
+  padding: 0 1em;
 }
 li a {
   padding: 8px;
@@ -37,9 +37,7 @@ li a {
   color: #FFFFFF;
   text-decoration: none; /* remove underline */
 }
-
-/* mouse over */
-li a:hover {
+li a:hover { /* mouse over */
   background-color: #388E3C;
 }
 
@@ -62,34 +60,32 @@ td {
 }
 
 
+/* Previous button inside Schedule Header */
+a:link { color: white; text-decoration: none;}
+a:visited { color: white; text-decoration: none;}
+a:hover { color: white; text-decoration: none;}
+.prev {
+  float: left;
+}
+.next {
+  float: right;
+}
+.content {
+  margin: 0 auto;
+}
+
 /* Schedule Header */
 .scheduleHeader {
   padding: 30px 25px;
-  width: 100%;
   background: #CC6767;
   text-align: center;
 }
-.scheduleHeader ul li {
+.scheduleHeader {
     color: white;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-
-/* Previous button inside month header */
-.scheduleHeader .prev {
-    float: left;
-    padding-top: 10px;
-    padding-left: 50px;
-}
-
-/* Next button */
-.scheduleHeader .next {
-    float: right;
-    padding-top: 10px;
-    padding-right: 100px;
-}
-
 
 /* Weekdays (Mon-Sat) */
 th {
