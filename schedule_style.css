@@ -50,3 +50,6 @@ th {
   margin: auto;
 }
 
+td:hover {
+  background-color: #F08080;
+}
