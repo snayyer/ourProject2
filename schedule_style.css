@@ -1,0 +1,52 @@
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+div {
+  overflow-x:auto;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;  
+  table-layout: fixed;
+  margin: auto;
+}
+
+td {
+  margin: auto;
+  padding: 30px;
+  vertical-align: top;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+
+/* Schedule Header */
+.scheduleHeader {
+  padding: 70px 25px;
+  width: 100%;
+  background: #D46A6A;
+  text-align: center;
+}
+.scheduleHeader ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Weekdays (Mon-Sat) */
+th {
+  font-size: larger;
+  padding: 10px;
+  font-weight: bold;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  background: #eeeeee;
+  margin: auto;
+}
+
