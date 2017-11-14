@@ -1,0 +1,77 @@
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;  
+  table-layout: fixed;
+  margin: auto;
+}
+
+td {
+  margin: auto;
+  padding: 30px;
+  vertical-align: top;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+
+/* Schedule Header */
+.scheduleHeader {
+  padding: 70px 25px;
+  width: 100%;
+  background: #D46A6A;
+  text-align: center;
+}
+.scheduleHeader ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.scheduleHeader .prev {
+    float: left;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+/* Next button */
+.scheduleHeader .next {
+    float: right;
+    padding-top: 10px;
+    padding-right: 100px;
+}
+
+
+/* Weekdays (Mon-Sat) */
+th {
+  font-size: larger;
+  padding: 10px;
+  font-weight: bold;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  background: #eeeeee;
+  margin: auto;
+}
+
+td:hover {
+  background-color: #F08080;
+}
+
+@media screen and (max-width: 480px) {
+  table {
+    overflow-x: auto;
+	display: block;
+  }
+}
