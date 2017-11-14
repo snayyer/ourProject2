@@ -38,10 +38,11 @@ li a {
   text-decoration: none; /* remove underline */
 }
 li a:hover { /* mouse over */
-  background-color: #388E3C;
+  background-color: white;
+  color: black;
 }
 
-/* table */
+/* timetable */
 table {
   border-collapse: collapse;
   text-align: center;
