@@ -5,6 +5,45 @@ body {
   font-family: Verdana, sans-serif;
 }
 
+/* colleage name bar */
+header > div {
+  background-color: black;
+  color: white;
+    /*font-size: 20px;*/
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: left;
+  padding: 0 0 0 1em;
+}
+
+/* navigation bar */
+header {
+  text-align: center;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0 0 0 0; /* removing circle */
+  margin: 0 0 0 0;
+  background-color: #BD3131;
+  overflow: hidden;
+}
+li {
+  text-align: center;
+  display: inline-block;
+}
+li a {
+  padding: 8px;
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none; /* remove underline */
+}
+
+/* mouse over */
+li a:hover {
+  background-color: #388E3C;
+}
+
+/* table */
 table {
   border-collapse: collapse;
   text-align: center;
@@ -25,9 +64,9 @@ td {
 
 /* Schedule Header */
 .scheduleHeader {
-  padding: 70px 25px;
+  padding: 30px 25px;
   width: 100%;
-  background: #D46A6A;
+  background: #CC6767;
   text-align: center;
 }
 .scheduleHeader ul li {
