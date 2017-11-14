@@ -5,6 +5,43 @@ body {
   font-family: Verdana, sans-serif;
 }
 
+/* colleage name bar */
+header > div {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: left;
+  padding: 0 0 0 1em;
+}
+
+/* navigation bar */
+header {
+  text-align: center;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0 0 0 0; /* removing circle */
+  margin: 0 0 0 0;
+  background-color: #BD3131;
+  overflow: hidden;
+}
+li {
+  text-align: center;
+  display: inline-block;
+  padding: 0 1em;
+}
+li a {
+  padding: 8px;
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none; /* remove underline */
+}
+li a:hover { /* mouse over */
+  background-color: #388E3C;
+}
+
+/* table */
 table {
   border-collapse: collapse;
   text-align: center;
@@ -23,34 +60,32 @@ td {
 }
 
 
+/* Previous button inside Schedule Header */
+a:link { color: white; text-decoration: none;}
+a:visited { color: white; text-decoration: none;}
+a:hover { color: white; text-decoration: none;}
+.prev {
+  float: left;
+}
+.next {
+  float: right;
+}
+.content {
+  margin: 0 auto;
+}
+
 /* Schedule Header */
 .scheduleHeader {
-  padding: 70px 25px;
-  width: 100%;
-  background: #D46A6A;
+  padding: 30px 25px;
+  background: #CC6767;
   text-align: center;
 }
-.scheduleHeader ul li {
+.scheduleHeader {
     color: white;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-
-/* Previous button inside month header */
-.scheduleHeader .prev {
-    float: left;
-    padding-top: 10px;
-    padding-left: 50px;
-}
-
-/* Next button */
-.scheduleHeader .next {
-    float: right;
-    padding-top: 10px;
-    padding-right: 100px;
-}
-
 
 /* Weekdays (Mon-Sat) */
 th {
