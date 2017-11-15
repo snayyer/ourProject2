@@ -46,13 +46,25 @@ nav {
     margin-left: auto;
     margin-right: auto;
     display: table;
-    background: red;
+    background: #BD3131;
+    width: 100%;
 }
 
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
+
+/* IIT navbar */
+.iitName {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: left;
+  padding: 0 0 0 1em;
+}
+
 
 /*.support a {
     margin-top: 2em;
