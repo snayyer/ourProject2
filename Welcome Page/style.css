@@ -1,5 +1,5 @@
 body {
-  font-size: 18px;
+  font-size: 1em;
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
@@ -161,6 +161,7 @@ nav {
 }
 /* IIT navbar */
 .iitName {
+  font-size: 1em;
   background-color: black;
   color: white;
   text-transform: uppercase;

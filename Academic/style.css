@@ -7,7 +7,6 @@ header{
     font-size: 1.50em;
     background-color:lightslategrey;
     width: 100%;
-
 }
 
 h1 {
@@ -35,6 +34,16 @@ button{
     margin:auto;
 }
 
+/* IIT navbar */
+.iitName {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: left;
+  padding: 0 0 0 1em;
+}
+
 .topnav a {
     float: left;
     display: block;
@@ -52,16 +61,6 @@ nav {
     background: #BD3131;
     width: 100%;
 }
-/* IIT navbar */
-.iitName {
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: left;
-  padding: 0 0 0 1em;
-}
-
 
 .topnav a:hover {
     background-color: #ddd;
