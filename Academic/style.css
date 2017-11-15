@@ -1,0 +1,65 @@
+﻿body {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+header{
+    font-size: 1.50em;
+    background-color:lightslategrey;
+    width: 100%;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+h2{
+    font-size: 1.25em;
+    margin: 1.25em;
+    text-align: center;
+}
+
+fieldset{
+    background-color: red;
+    color:white;
+    text-decoration: none;
+    margin: 1em;
+    padding: 1.3em;
+    text-align:center;
+
+}
+button{
+    text-align:center;
+    margin:auto;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    background: red;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*.support a {
+    margin-top: 2em;
+    display: inline-block;
+}
+*/
+
