@@ -38,7 +38,7 @@ li a {
   text-decoration: none; /* remove underline */
 }
 li a:hover { /* mouse over */
-  background-color: white;
+  background-color: #ddd;
   color: black;
 }
 
