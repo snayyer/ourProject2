@@ -1,4 +1,68 @@
-﻿body {
+/** {
+    margin: 0;
+    padding: 0;
+}*/
+
+/*.body_wrapper {
+    height: 100%;
+    margin: 0 auto;
+}*/
+
+img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    float: none;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'arial';
+    color: #202c38;
+}
+
+p {
+    font-family: 'arial';
+}
+
+a {
+    color: #333;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline:none;
+}
+
+.clear {
+    clear: both;
+}
+.container{width: 100%}
+
+body {
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -7,6 +71,7 @@ header{
     font-size: 1.50em;
     background-color:lightslategrey;
     width: 100%;
+
 }
 
 h1 {
@@ -34,16 +99,6 @@ button{
     margin:auto;
 }
 
-/* IIT navbar */
-.iitName {
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: left;
-  padding: 0 0 0 1em;
-}
-
 .topnav a {
     float: left;
     display: block;
@@ -58,8 +113,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     display: table;
-    background: #BD3131;
-    width: 100%;
+    background: red;
 }
 
 .topnav a:hover {
@@ -67,9 +121,99 @@ nav {
     color: black;
 }
 
-/*.support a {
-    margin-top: 2em;
-    display: inline-block;
+.single-pro {
+    
+    border: 1px solid #ddd;
+    margin-top: 39px;
+    
 }
-*/
+.single-pro h4 {
+    padding: 2px 10px;
+    text-align: left;
+    background: #ddd none repeat scroll 0 0;
+    margin: 0
+}
 
+.single-pro-content > ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border-bottom: 1px solid;
+    margin-bottom: 13px;
+}
+.single-pro-content > ul > li {
+    border-left: 1px solid;
+    border-radius: 10px 10px 0 0;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 5px 25px;
+}
+.single-pro-content p {
+  text-align: left;
+}
+.single-pro-content {
+  padding: 6px 15px;
+}
+.advisar i {
+    color: #e6c06b;
+    font-size: 19px;
+    padding-right: 10px;
+}
+.advisar {
+    border-bottom: 1px dashed;
+    border-top: 1px dashed;
+    text-align: left;
+}
+
+.sec-menu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.sec-menu ul li {
+    display: block;
+    text-align: left;
+}
+.sec-menu ul li a {
+    color: #b22b39;
+    display: block;
+    margin-bottom: 15px;
+}
+.form-area {
+    padding: 10px 0;
+    text-align: left;
+}
+.form-area button {
+    margin-left: -5px;
+    padding: 0 10px;
+}
+.tex {
+  color: #b22b39;
+}
+.single-pro-content h3 {
+    color: #777;
+    font-size: 18px;
+    text-align: left;
+}
+.sec-menu.sccorl {
+  height: 125px;
+  overflow-y: scroll;
+}
+.dib-form {
+  text-align: right;
+}
+.dib-table 
+thead tr th {
+    text-align: center;
+}
+.dib-table {
+  height: 200px;
+  overflow-y: scroll;
+}
+.but-text {
+  border-top: 1px solid;
+}
