@@ -1,20 +1,19 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" class="nojs">
 <head>
+    <title>Welome To IIT</title>
     <meta charset="utf-8" />
-    <title>Class Lookup</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <!-- CSS Reset by using normalize.css-->
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="style.css" />
 </head>
 <body>
-<!--    <header>
-        <h1>myIIT</h1>
-    </header>-->
     <div class="iitName">ILLINOIS INSTITUTE OF TECHNOLOGY</div>
     <nav>
         <div class="topnav" id="myTopnav">
@@ -23,31 +22,45 @@
             <a href="#studentlife">Student Life</a>
             <a href="#finances">Finances</a>
             <a href="#athletics">Athletics</a>
-            <a href="#libary">Library</a>
+            <a href="#libary">Libary</a>
             <a href="#research">Research</a>
             <a href="#mystuff">My Stuff</a>
             <a href="#trainigandsupport">Training and Support</a>
+            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">&#9776;</a>
         </div>
     </nav>
-        <form method="post">
-             <h2>Class Lookup</h2>
+    <div class="wrapper">
+        <!--    <div class="box header">
+              header
+            </div>-->
+        <div class="box column1">
+            <form method="post">
+                <h2>Class Lookup</h2>
                 <select name="Fall 2017 Classes">
-                 <option value="428">Database Security</option>
-                 <option value="443">Vulnerability Analys and Ctrl</option>
-                 <option value="448">Cyber Secuirty Technologies</option>
-                 <option value="478">Cyber Secuirty Management</option>
-                 <option value="578">Cyber Security Mgmt</option>
-                 <option value="301">Intro OS and Hardware I</option>
-                 <option value="311">Intro to Software Development</option>
-                 <option value="312">Intro Systems Software Programing</option>
+                    <option value="428">Database Security</option>
+                    <option value="443">Vulnerability Analys and Ctrl</option>
+                    <option value="448">Cyber Secuirty Technologies</option>
+                    <option value="478">Cyber Secuirty Management</option>
+                    <option value="578">Cyber Security Mgmt</option>
+                    <option value="301">Intro OS and Hardware I</option>
+                    <option value="311">Intro to Software Development</option>
+                    <option value="312">Intro Systems Software Programing</option>
                 </select>
                 <p></p>
                 <button>Class Search</button>
-        </form>
-    <footer>
-        <div class="helpmenu" id="support">
-            <a href="#Help">Help</a>
+            </form>
+         </div>
+
+        <div class="box main">IIT Today</div>
+        <div class="box column2">
+            <div>Public Saftey</div>
+            <div>IIT Personal ID Numbers</div>
+            <div>Community Support</div>
+            <div>Google Search</div>
+            <div>IIT In The News</div>
         </div>
-    </footer>
+        <div class="box footer">Footer</div>
+    </div>
+
 </body>
 </html>
