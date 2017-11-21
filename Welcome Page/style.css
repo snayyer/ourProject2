@@ -220,15 +220,13 @@ to open and clsoe the topnav*/
       grid-template-columns: 1fr;
       grid-area: 1em;
       grid-template-areas: 
-      "top"
+      "top" 
       "text"
       "center"
       "text2"
       "bottom";
       background-color: #fff;
       color: #444;
-      
-     
     }
     
     .column1 {
