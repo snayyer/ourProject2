@@ -1,132 +1,170 @@
-/** {
-    margin: 0;
-    padding: 0;
-}*/
-
-/*.body_wrapper {
-    height: 100%;
-    margin: 0 auto;
-}*/
-
-img {
-    max-width: 100%;
-    max-height: 100%
-}
-
-.alignleft {
-    float: left;
-    margin-right: 15px;
-}
-
-.alignright {
-    float: right;
-    margin-left: 15px;
-}
-
-.aligncenter {
-    float: none;
-    margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'arial';
-    color: #202c38;
-}
-
-p {
-    font-family: 'arial';
-}
-
-a {
-    color: #333;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:focus {
-    outline:none;
-}
-
-.clear {
-    clear: both;
-}
-.container{width: 100%}
-
 body {
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
-header{
-    font-size: 1.50em;
-    background-color:lightslategrey;
-    width: 100%;
 
+.wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden
 }
 
-h1 {
-    text-align: center;
-    margin: 0;
+
+.header {
+    grid-column: 1/4;
+    background: grey;
 }
 
-h2{
-    font-size: 1.25em;
-    margin: 1.25em;
-    text-align: center;
+.c1 {
+    background-color: grey;
 }
 
-fieldset{
-    background-color: red;
-    color:white;
-    text-decoration: none;
-    margin: 1em;
-    padding: 1.3em;
-    text-align:center;
-
-}
-button{
-    text-align:center;
-    margin:auto;
+.main {
+    grid-column: 2/3;
 }
 
+.footer {
+    background: gray;
+    padding: 10px 0;
+    margin-top: 25px;
+    color: #fff;
+}
+.container {
+  margin-left: 4%;
+  overflow: hidden;
+    width: 1300px
+}
+
+
+/* ===== START OF FORM STYLING ===== */
+
+
+/* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    text-decoration: none;
-    font-size: 18px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 nav {
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
-    background: red;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  background-color: #BD3131;
+}
+/* IIT navbar */
+.iitName {
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: left;
+  padding: 0 0 0 1em;
 }
 
+
+/* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
-.single-pro {
+/* This hides the navbar selector for mobile when it is full screen */
+.topnav .icon {
+  display: none;
+}
+
+
+/* After the minimum width is less than a tablet size (786px) all links 
+will collapse excpect for the welcome page. It will also display the link 
+to open and clsoe the topnav*/
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+/* Here we add the responsive class from our Javascript.
+   The class makes teh top navbar on mobile display all links horizontally*/
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-area: 1em;
+      grid-template-areas: 
+      "top"
+      "text"
+      "center"
+      "text2"
+      "bottom";
+      background-color: #fff;
+      color: #444;
+      
+     
+    }
     
+    .column1 {
+      grid-area: text;
+    }
+
+    .column2{
+      grid-area: text2;
+    }
+    
+    .header {
+        grid-area: top;
+    }
+
+    .main{
+      grid-area: center;
+    }
+    
+
+    .footer {
+        grid-area: bottom;
+    }
+    
+  
+}
+
+
+/*main ------------css......................................*/
+.single-pro {
     border: 1px solid #ddd;
     margin-top: 39px;
-    
 }
+
 .single-pro h4 {
     padding: 2px 10px;
     text-align: left;
@@ -142,6 +180,7 @@ nav {
     border-bottom: 1px solid;
     margin-bottom: 13px;
 }
+
 .single-pro-content > ul > li {
     border-left: 1px solid;
     border-radius: 10px 10px 0 0;
@@ -152,17 +191,22 @@ nav {
     margin-top: 15px;
     padding: 5px 25px;
 }
+
 .single-pro-content p {
-  text-align: left;
+    text-align: left;
 }
+
 .single-pro-content {
-  padding: 6px 15px;
+    padding: 6px 15px;
+    overflow: hidden;
 }
+
 .advisar i {
     color: #e6c06b;
     font-size: 19px;
     padding-right: 10px;
 }
+
 .advisar {
     border-bottom: 1px dashed;
     border-top: 1px dashed;
@@ -174,46 +218,344 @@ nav {
     margin: 0;
     padding: 0;
 }
+
 .sec-menu ul li {
     display: block;
     text-align: left;
 }
+
 .sec-menu ul li a {
     color: #b22b39;
     display: block;
     margin-bottom: 15px;
 }
+
 .form-area {
     padding: 10px 0;
     text-align: left;
 }
+
 .form-area button {
     margin-left: -5px;
     padding: 0 10px;
 }
+
 .tex {
-  color: #b22b39;
+    color: #b22b39;
 }
+
 .single-pro-content h3 {
     color: #777;
     font-size: 18px;
     text-align: left;
 }
+
 .sec-menu.sccorl {
-  height: 125px;
-  overflow-y: scroll;
+    height: 125px;
+    overflow-y: scroll;
 }
+
 .dib-form {
-  text-align: right;
+    text-align: right;
 }
-.dib-table 
-thead tr th {
+
+.dib-table thead tr th {
     text-align: center;
 }
+
 .dib-table {
-  height: 200px;
-  overflow-y: scroll;
+    height: 200px;
+    overflow-y: scroll;
 }
+
 .but-text {
-  border-top: 1px solid;
+    border-top: 1px solid;
+}
+
+.col-md-3 {
+    float: left;
+    margin-right: 2%;
+    width: 27%;
+}
+
+.col-md-6 {
+    float: left;
+    margin-right: 2%;
+    width: 38%;
+}
+/*table----------css*/
+table {
+    background-color: transparent;
+}
+caption {
+    color: #777;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-align: left;
+}
+th {
+    text-align: left;
+}
+.table {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: 1px solid #ddd;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+}
+.table > thead > tr > th {
+    border-bottom: 2px solid #ddd;
+    vertical-align: bottom;
+}
+.table > caption + thead > tr:first-child > td, .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > td, .table > thead:first-child > tr:first-child > th {
+    border-top: 0 none;
+}
+.table > tbody + tbody {
+    border-top: 2px solid #ddd;
+}
+.table .table {
+    background-color: #fff;
+}
+.table-condensed > tbody > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > thead > tr > th {
+    padding: 5px;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border-bottom-width: 2px;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #f9f9f9;
+}
+.table-hover > tbody > tr:hover {
+    background-color: #f5f5f5;
+}
+table col[class*="col-"] {
+    display: table-column;
+    float: none;
+    position: static;
+}
+table td[class*="col-"], table th[class*="col-"] {
+    display: table-cell;
+    float: none;
+    position: static;
+}
+.table > tbody > tr.active > td, .table > tbody > tr.active > th, .table > tbody > tr > td.active, .table > tbody > tr > th.active, .table > tfoot > tr.active > td, .table > tfoot > tr.active > th, .table > tfoot > tr > td.active, .table > tfoot > tr > th.active, .table > thead > tr.active > td, .table > thead > tr.active > th, .table > thead > tr > td.active, .table > thead > tr > th.active {
+    background-color: #f5f5f5;
+}
+.table-hover > tbody > tr.active:hover > td, .table-hover > tbody > tr.active:hover > th, .table-hover > tbody > tr:hover > .active, .table-hover > tbody > tr > td.active:hover, .table-hover > tbody > tr > th.active:hover {
+    background-color: #e8e8e8;
+}
+.table > tbody > tr.success > td, .table > tbody > tr.success > th, .table > tbody > tr > td.success, .table > tbody > tr > th.success, .table > tfoot > tr.success > td, .table > tfoot > tr.success > th, .table > tfoot > tr > td.success, .table > tfoot > tr > th.success, .table > thead > tr.success > td, .table > thead > tr.success > th, .table > thead > tr > td.success, .table > thead > tr > th.success {
+    background-color: #dff0d8;
+}
+.table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr.success:hover > th, .table-hover > tbody > tr:hover > .success, .table-hover > tbody > tr > td.success:hover, .table-hover > tbody > tr > th.success:hover {
+    background-color: #d0e9c6;
+}
+.table > tbody > tr.info > td, .table > tbody > tr.info > th, .table > tbody > tr > td.info, .table > tbody > tr > th.info, .table > tfoot > tr.info > td, .table > tfoot > tr.info > th, .table > tfoot > tr > td.info, .table > tfoot > tr > th.info, .table > thead > tr.info > td, .table > thead > tr.info > th, .table > thead > tr > td.info, .table > thead > tr > th.info {
+    background-color: #d9edf7;
+}
+.table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr.info:hover > th, .table-hover > tbody > tr:hover > .info, .table-hover > tbody > tr > td.info:hover, .table-hover > tbody > tr > th.info:hover {
+    background-color: #c4e3f3;
+}
+.table > tbody > tr.warning > td, .table > tbody > tr.warning > th, .table > tbody > tr > td.warning, .table > tbody > tr > th.warning, .table > tfoot > tr.warning > td, .table > tfoot > tr.warning > th, .table > tfoot > tr > td.warning, .table > tfoot > tr > th.warning, .table > thead > tr.warning > td, .table > thead > tr.warning > th, .table > thead > tr > td.warning, .table > thead > tr > th.warning {
+    background-color: #fcf8e3;
+}
+.table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr.warning:hover > th, .table-hover > tbody > tr:hover > .warning, .table-hover > tbody > tr > td.warning:hover, .table-hover > tbody > tr > th.warning:hover {
+    background-color: #faf2cc;
+}
+.table > tbody > tr.danger > td, .table > tbody > tr.danger > th, .table > tbody > tr > td.danger, .table > tbody > tr > th.danger, .table > tfoot > tr.danger > td, .table > tfoot > tr.danger > th, .table > tfoot > tr > td.danger, .table > tfoot > tr > th.danger, .table > thead > tr.danger > td, .table > thead > tr.danger > th, .table > thead > tr > td.danger, .table > thead > tr > th.danger {
+    background-color: #f2dede;
+}
+.table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr.danger:hover > th, .table-hover > tbody > tr:hover > .danger, .table-hover > tbody > tr > td.danger:hover, .table-hover > tbody > tr > th.danger:hover {
+    background-color: #ebcccc;
+}
+.table-responsive {
+    min-height: 0.01%;
+    overflow-x: auto;
+}
+
+
+
+
+
+@media only screen and (min-width: 1920px) {
+
+   .container {
+    width: 1920px
+}    
+    
+}
+
+@media only screen and (min-width: 1680px) and (max-width: 1919px) {
+    .container {
+    width: 1680px
+}
+    
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1679px) {
+     .container {
+    width: 1600px
+}
+    
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1599px) {
+ 
+     .container {
+    width: 1440px
+}  
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+      .container {
+    width: 1200px
+}
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+ .col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+} 
+    .container {
+    width: 992px
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  
+   .col-md-3 {
+    float: left;
+    margin-right: 2%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 2%;
+    width: 100%;
+}  
+    .container {
+  margin-left: 4%;
+margin-right: 4%  ;
+        width: 768px
+}
+    
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* #menu is the original menu */
+ 
+.col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+        .container {
+  margin-left: 4%;
+margin-right: 4% ;
+     width: 480px
+}
+}
+
+@media only screen and (min-width: 414px) and (max-width: 479px) {
+  /* #menu is the original menu */
+ .col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+        .container {
+  margin-left: 4%;
+margin-right: 4%;
+     width: 414px    
+}
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+  /* #menu is the original menu */
+ .col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+        .container {
+  margin-left: 4%;
+margin-right: 4% ;
+     width: 375px    
+}
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+  /* #menu is the original menu */
+ .col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+        .container {
+  margin-left: 4%;
+margin-right: 4% ;
+     width: 360px    
+}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  /* #menu is the original menu */
+ 
+.col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+        .container {
+  margin-left: 4%;
+margin-right: 4% ;
+     width: 320px 
+}
 }
