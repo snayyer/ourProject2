@@ -77,22 +77,19 @@ ul, li {
 /* ===== START OF FORM STYLING ===== */
 
 form {
-  grid-template-columns: 50px 2fr;
-  grid-gap: 12px;
-  font-family: 'Open Sans', sans-serif;
+  display : grid;
+  grid-template-columns : 75px 1fr;
+  grid-gap : 16px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 600px;
+  margin: auto;
 }
-
 label {
-  grid-column: 1 / 2;
-  font-size: 20px;
+  grid-column : 1 / 2;
+  font-size : 14px;
 }
-
-input, select {
-  grid-column: 2 / 3;
-}
-
-button {
-  grid-column: 3/3;
+input, button, .block {
+  grid-column : 2 / 3;
 }
 
 /* ===== START OF CALENDAR CSS ===== */
@@ -254,8 +251,27 @@ to open and clsoe the topnav*/
     .box {
       background-color: #444;
       color: #fff;
-      
-      
-     
     }
+  /* ===== START OF FORM STYLING ===== */
+
+  form {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-gap: 16px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+  }
+
+  button {
+    height: 50px;
+  }
+    
 }
+
+@media only screen and (max-width: 480px) {
+  
+      
+   
+    
+    }
+  
