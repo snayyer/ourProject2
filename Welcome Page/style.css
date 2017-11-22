@@ -19,6 +19,7 @@ body {
   grid-column: 1/4;
   background: grey;
 }
+
 .column1 {
  display: grid;
  grid-template-columns: 1fr;
