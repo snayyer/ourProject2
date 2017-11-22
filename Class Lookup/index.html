@@ -10,10 +10,14 @@
     <!-- CSS Reset by using normalize.css-->
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
     <!-- Icon Library -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" media="screen" href="style.css" />
 </head>
 <body>
+    <script>
+        function Alert() {
+            window.alert("Class not available");
+        }
+    </script>
     <div class="iitName">ILLINOIS INSTITUTE OF TECHNOLOGY</div>
     <nav>
         <div class="topnav" id="myTopnav">
@@ -22,7 +26,7 @@
             <a href="#studentlife">Student Life</a>
             <a href="#finances">Finances</a>
             <a href="#athletics">Athletics</a>
-            <a href="#libary">Libary</a>
+            <a href="#libary">Library</a>
             <a href="#research">Research</a>
             <a href="#mystuff">My Stuff</a>
             <a href="#trainigandsupport">Training and Support</a>
@@ -33,7 +37,7 @@
         <!--    <div class="box header">
               header
             </div>-->
-        <div class="box column1">
+        <div class="box main">
             <form method="post">
                 <h2>Class Lookup</h2>
                 <select name="Fall 2017 Classes">
@@ -47,19 +51,15 @@
                     <option value="312">Intro Systems Software Programing</option>
                 </select>
                 <p></p>
-                <button>Class Search</button>
+                <button onclick= "Alert()">Class Search</button>
             </form>
          </div>
-
-        <div class="box main">IIT Today</div>
-        <div class="box column2">
-            <div>Public Saftey</div>
-            <div>IIT Personal ID Numbers</div>
-            <div>Community Support</div>
-            <div>Google Search</div>
-            <div>IIT In The News</div>
+        <div class="box footer">
+            <p>Illinois Institute of Tecnology - TheDarkDecesent</p>
+            <div class="Highlight">
+            <a href="https://github.com/TheDarkDescent362/ourProject2">GitHub</a>   
+            </div>
         </div>
-        <div class="box footer">Footer</div>
     </div>
 
 </body>
