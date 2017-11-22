@@ -252,6 +252,10 @@ to open and clsoe the topnav*/
       background-color: #444;
       color: #fff;
     }
+
+    .color{
+      text-decoration-color: red;
+    }
   /* ===== START OF FORM STYLING ===== */
 
   form {
