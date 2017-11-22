@@ -17,12 +17,21 @@ h2
 }
 form {
   display : grid;
-  grid-template-columns : 1fr;
+  grid-template-columns : 1fr 2fr;
   grid-gap : 16px;
   font-family : 'Open Sans', sans-serif;
   max-width: 300px;
   margin: auto;
 }
+
+label {
+    grid-column: 1 / 2;
+    font-size: 20px;
+  }
+    
+  input, button, .block {
+    grid-column: 2 / 3;
+  }
 
  fieldset
 {
