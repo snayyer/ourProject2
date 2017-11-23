@@ -40,6 +40,15 @@ body {
     width: 1300px
 }
 
+a:link, a:visited {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
 
 /* ===== START OF FORM STYLING ===== */
 
