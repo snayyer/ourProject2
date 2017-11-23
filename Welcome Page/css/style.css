@@ -36,6 +36,10 @@ body {
   grid-column: 2/3;
 }
 
+.main ul li {
+  text-align: left;
+}
+
 .column2 {
   display: grid;
   grid-template-columns: 1fr;
@@ -45,7 +49,9 @@ body {
 
 .footer {
   grid-column: 1/4;
-  background: grey;
+  background: black;
+  color: white;
+
 }
 
 .box {
@@ -76,6 +82,16 @@ ul, li {
 .red{
   color: red;
 }
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: silver;
+}
+
 
 
 /* ===== START OF FORM STYLING ===== */
@@ -257,8 +273,17 @@ to open and clsoe the topnav*/
       color: #fff;
     }
 
-    .color{
-      text-decoration-color: red;
+    .red{
+      color: silver;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: red;
     }
   /* ===== START OF FORM STYLING ===== */
 
@@ -270,16 +295,42 @@ to open and clsoe the topnav*/
     overflow: hidden;
   }
 
+  input, select{
+    height: 50px;
+    width: 300px;
+    margin: auto;
+  }
+
   button {
     height: 50px;
+    width: 200px;
+    margin: auto;
   }
     
 }
 
 @media only screen and (max-width: 480px) {
   
-      
-   
-    
-    }
+ /* ===== START OF FORM STYLING ===== */
+
+ form {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-gap: 16px;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+input, select{
+  height: 50px;
+  width: auto;
+  margin-right: auto;
+}
+
+button {
+  height: 50px;
+  width: auto;
+  margin-right: auto;
+}
   
+}
