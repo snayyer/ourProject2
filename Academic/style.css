@@ -29,10 +29,10 @@ body {
 }
 
 .footer {
-    background: gray;
+    background: black;
     padding: 10px 0;
     margin-top: 25px;
-    color: black;
+    color: white;
 }
 .container {
   margin-left: 4%;
