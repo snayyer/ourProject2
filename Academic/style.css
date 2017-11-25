@@ -130,7 +130,6 @@ to open and clsoe the topnav*/
   .wrapper {
       display: grid;
       grid-template-columns: 1fr;
-      grid-area: 1em;
       grid-template-areas: 
       "top"
       "text"
