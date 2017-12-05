@@ -1,0 +1,1262 @@
+body {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;padding: 0;
+}
+
+.wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden
+}
+
+img{max-width: 100%;max-height: 100%}
+.header {
+    grid-column: 1/4;
+    background: grey;
+}
+.log-in {
+  text-align: center;
+}
+
+.c1 {
+    background-color: grey;
+}
+
+.main {
+    grid-column: 2/3;
+}
+
+.footer {
+    background: black;
+    padding: 10px 0;
+    margin-top: 25px;
+    color: white;
+}
+.container {
+  margin-left: 4%;
+  overflow: hidden;
+    width: 1300px
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color:#cc0000;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+
+/* ===== START OF FORM STYLING ===== */
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav {
+     background-color: #cc0000;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+/* IIT navbar */
+.iitName {
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: left;
+  padding: 0 0 0 1em;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* This hides the navbar selector for mobile when it is full screen */
+.topnav .icon {
+  display: none;
+}
+button, input {
+  margin-top: 20px;
+  overflow: visible;
+}
+
+/* After the minimum width is less than a tablet size (786px) all links 
+will collapse excpect for the welcome page. It will also display the link 
+to open and clsoe the topnav*/
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+/* Here we add the responsive class from our Javascript.
+   The class makes teh top navbar on mobile display all links horizontally*/
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "top"
+      "text"
+      "center"
+      "text2"
+      "bottom";
+      background-color: #fff;
+      color: #444;
+      
+     
+    }
+    
+    .column1 {
+      grid-area: text;
+    }
+
+    .column2{
+      grid-area: text2;
+    }
+    
+    .header {
+        grid-area: top;
+    }
+
+    .main{
+      grid-area: center;
+    }
+    
+
+    .footer {
+        grid-area: bottom;
+    }
+    
+  
+}
+
+
+/*main ------------css......................................*/
+.single-pro {
+    border: 1px solid #ddd;
+    margin-top: 39px;
+}
+
+.single-pro h4 {
+    padding: 2px 10px;
+    text-align: left;
+    background: #ddd none repeat scroll 0 0;
+    margin: 0
+}
+
+.single-pro-content > ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border-bottom: 1px solid;
+    margin-bottom: 13px;
+}
+
+.single-pro-content > ul > li {
+    border-left: 1px solid;
+    border-radius: 10px 10px 0 0;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 5px 25px;
+}
+
+.single-pro-content p {
+    text-align: left;
+}
+
+.single-pro-content {
+    padding: 6px 15px;
+    overflow: hidden;
+}
+
+.advisar i {
+    color: #e6c06b;
+    font-size: 19px;
+    padding-right: 10px;
+}
+
+.advisar {
+    border-bottom: 1px dashed;
+    border-top: 1px dashed;
+    text-align: left;
+}
+
+.sec-menu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.sec-menu ul li {
+    display: block;
+    text-align: left;
+}
+
+.sec-menu ul li a {
+    color: #cc0000;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-area {
+    padding: 10px 0;
+    text-align: left;
+}
+
+.form-area button {
+    margin-left: -5px;
+    padding: 0 10px;
+}
+
+.tex {
+    color: #cc0000;
+}
+
+.single-pro-content h3 {
+    color: #777;
+    font-size: 18px;
+    text-align: left;
+}
+
+.sec-menu.sccorl {
+    height: 125px;
+    overflow-y: scroll;
+}
+
+.dib-form {
+    text-align: right;
+}
+
+.dib-table thead tr th {
+    text-align: center;
+}
+
+.dib-table {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.but-text {
+    border-top: 1px solid;
+}
+
+.col-md-3 {
+    float: left;
+    margin-right: 2%;
+    width: 27%;
+}
+
+.col-md-6 {
+    float: left;
+    margin-right: 2%;
+    width: 38%;
+}
+/*table----------css*/
+table {
+    background-color: transparent;
+}
+caption {
+    color: #777;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-align: left;
+}
+th {
+    text-align: left;
+}
+.table {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: 1px solid #ddd;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+}
+.table > thead > tr > th {
+    border-bottom: 2px solid #ddd;
+    vertical-align: bottom;
+}
+.table > caption + thead > tr:first-child > td, .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > td, .table > thead:first-child > tr:first-child > th {
+    border-top: 0 none;
+}
+.table > tbody + tbody {
+    border-top: 2px solid #ddd;
+}
+.table .table {
+    background-color: #fff;
+}
+.table-condensed > tbody > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > thead > tr > th {
+    padding: 5px;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border-bottom-width: 2px;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #f9f9f9;
+}
+.table-hover > tbody > tr:hover {
+    background-color: #f5f5f5;
+}
+table col[class*="col-"] {
+    display: table-column;
+    float: none;
+    position: static;
+}
+table td[class*="col-"], table th[class*="col-"] {
+    display: table-cell;
+    float: none;
+    position: static;
+}
+.table > tbody > tr.active > td, .table > tbody > tr.active > th, .table > tbody > tr > td.active, .table > tbody > tr > th.active, .table > tfoot > tr.active > td, .table > tfoot > tr.active > th, .table > tfoot > tr > td.active, .table > tfoot > tr > th.active, .table > thead > tr.active > td, .table > thead > tr.active > th, .table > thead > tr > td.active, .table > thead > tr > th.active {
+    background-color: #f5f5f5;
+}
+.table-hover > tbody > tr.active:hover > td, .table-hover > tbody > tr.active:hover > th, .table-hover > tbody > tr:hover > .active, .table-hover > tbody > tr > td.active:hover, .table-hover > tbody > tr > th.active:hover {
+    background-color: #e8e8e8;
+}
+.table > tbody > tr.success > td, .table > tbody > tr.success > th, .table > tbody > tr > td.success, .table > tbody > tr > th.success, .table > tfoot > tr.success > td, .table > tfoot > tr.success > th, .table > tfoot > tr > td.success, .table > tfoot > tr > th.success, .table > thead > tr.success > td, .table > thead > tr.success > th, .table > thead > tr > td.success, .table > thead > tr > th.success {
+    background-color: #dff0d8;
+}
+.table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr.success:hover > th, .table-hover > tbody > tr:hover > .success, .table-hover > tbody > tr > td.success:hover, .table-hover > tbody > tr > th.success:hover {
+    background-color: #d0e9c6;
+}
+.table > tbody > tr.info > td, .table > tbody > tr.info > th, .table > tbody > tr > td.info, .table > tbody > tr > th.info, .table > tfoot > tr.info > td, .table > tfoot > tr.info > th, .table > tfoot > tr > td.info, .table > tfoot > tr > th.info, .table > thead > tr.info > td, .table > thead > tr.info > th, .table > thead > tr > td.info, .table > thead > tr > th.info {
+    background-color: #d9edf7;
+}
+.table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr.info:hover > th, .table-hover > tbody > tr:hover > .info, .table-hover > tbody > tr > td.info:hover, .table-hover > tbody > tr > th.info:hover {
+    background-color: #c4e3f3;
+}
+.table > tbody > tr.warning > td, .table > tbody > tr.warning > th, .table > tbody > tr > td.warning, .table > tbody > tr > th.warning, .table > tfoot > tr.warning > td, .table > tfoot > tr.warning > th, .table > tfoot > tr > td.warning, .table > tfoot > tr > th.warning, .table > thead > tr.warning > td, .table > thead > tr.warning > th, .table > thead > tr > td.warning, .table > thead > tr > th.warning {
+    background-color: #fcf8e3;
+}
+.table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr.warning:hover > th, .table-hover > tbody > tr:hover > .warning, .table-hover > tbody > tr > td.warning:hover, .table-hover > tbody > tr > th.warning:hover {
+    background-color: #faf2cc;
+}
+.table > tbody > tr.danger > td, .table > tbody > tr.danger > th, .table > tbody > tr > td.danger, .table > tbody > tr > th.danger, .table > tfoot > tr.danger > td, .table > tfoot > tr.danger > th, .table > tfoot > tr > td.danger, .table > tfoot > tr > th.danger, .table > thead > tr.danger > td, .table > thead > tr.danger > th, .table > thead > tr > td.danger, .table > thead > tr > th.danger {
+    background-color: #f2dede;
+}
+.table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr.danger:hover > th, .table-hover > tbody > tr:hover > .danger, .table-hover > tbody > tr > td.danger:hover, .table-hover > tbody > tr > th.danger:hover {
+    background-color: #ebcccc;
+}
+.table-responsive {
+    min-height: 0.01%;
+    overflow-x: auto;
+}
+
+
+
+
+
+@media only screen and (min-width: 1920px) {
+
+   .container {
+    width: 1920px
+}    
+    
+}
+
+@media only screen and (min-width: 1680px) and (max-width: 1919px) {
+    .container {
+    width: 1680px
+}
+    
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1679px) {
+     .container {
+    width: 1600px
+}
+    
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1599px) {
+ 
+     .container {
+    width: 1440px
+}  
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+      .container {
+    width: 1200px
+}
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+ .col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+} 
+    .container {
+    width: 992px
+}
+    .topnav a {
+    font-size: 17px;
+}
+       .single-pro {
+    margin-right: 4%;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  
+   .col-md-3 {
+    float: left;
+    margin-right: 2%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 2%;
+    width: 100%;
+}  
+    .container {
+  margin-left: 4%;
+margin-right: 4% ;
+    width: 768px
+}
+    .single-pro {
+    margin-right: 8%;
+}
+    ul.text{text-align: left}
+    .timetable table{width:99%}
+    
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* #menu is the original menu */
+ 
+.col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+        .container {
+  margin-left: 4%;
+margin-right: 4% ;
+     width: 480px
+}
+       .single-pro {
+    margin-right: 8%;
+}
+    .text{text-align: left}
+    .timetable table{width:99%}
+}
+
+@media only screen and (min-width: 414px) and (max-width: 479px) {
+  /* #menu is the original menu */
+ .col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+        .container {
+  margin-left: 4%;
+margin-right: 4%;
+     width: 414px    
+}
+       .single-pro {
+    margin-right: 8%;
+}
+ul.text{text-align: left}
+    .timetable table{width:99%}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+  /* #menu is the original menu */
+ .col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+        .container {
+  margin-left: 4%;
+margin-right: 4% ;
+     width: 375px    
+}
+       .single-pro {
+    margin-right: 8%;
+}
+.timetable table{width:99%}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+  /* #menu is the original menu */
+ .col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+        .container {
+  margin-left: 4%;
+margin-right: 4% ;
+     width: 360px    
+}
+       .single-pro {
+    margin-right: 8%;
+}
+ul.text{text-align: left}
+.timetable table{width:99%}
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  /* #menu is the original menu */
+ 
+.col-md-3 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+.col-md-6 {
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+}
+        .container {
+  margin-left: 4%;
+margin-right: 4% ;
+     width: 320px 
+}
+       .single-pro {
+    margin-right: 8%;
+}
+    ul.text{text-align: left}
+    .timetable table{width:99%}
+}
+
+
+
+header {
+    background-color: black;
+}
+
+#campus {
+    text-align: center;
+}
+
+form {
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 2fr;*/ /*this was making the login screen not on the center */
+    /*grid-gap: 16px; */ /*this is not working.*/
+    font-family: 'Open Sans', sans-serif;
+    max-width: 300px;
+    margin: auto;
+}
+
+label {
+    grid-column: 1 / 2;
+    font-size: 20px;
+}
+
+input,
+button,
+.block {
+    grid-column: 2 / 3;
+}
+
+fieldset {
+    background-color:#cc0000;
+    color: white;
+    /*float: right; this is not naccrry */
+    text-align: center;
+}
+
+label {
+    text-align: right;
+    border: none;
+}
+
+#title {
+    background-color:#cc0000;
+    color: white;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*lookup................css..............................................*/
+body {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.lookuph2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+a:link,a:visited{
+    text-decoration: none;
+    color:#cc0000;
+}
+
+a:hover{
+    color: dodgerblue;
+}
+
+.header{
+  grid-column: 1/4;
+  background: grey;
+}
+.c1 {
+  background-color: grey;
+}
+
+ 
+.main {
+  grid-column: 2/3;
+}
+
+.column2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: auto;
+ /* grid-gap: 1em;*/
+}
+
+.footer {
+  grid-column: 1/4;
+  background-color: black;
+  color: white;
+
+}
+
+.box {
+  padding: 1em;
+}
+
+h3 {
+  font-size: 26px;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 0;
+}
+
+h4{
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+/*
+ul, li {
+  float: left;
+  text-align: left;
+  margin-top: 0;
+}
+*/
+
+
+/* ===== START OF FORM STYLING ===== */
+
+.lookup form {
+  grid-template-columns: 50px 2fr;
+  /*grid-gap: 12px;*/
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.lookup label {
+  grid-column: 1 / 2;
+  font-size: 20px;
+}
+
+.lookup input,.lookup select {
+  grid-column: 2 / 3;
+}
+
+.lookup button {
+  grid-column: 3/3;
+}
+
+/* ===== START OF CALENDAR CSS ===== */
+
+/*
+.calendarContainer{
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.month{
+  text-align: center;
+  background:#cc0000;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color:white;
+  padding:2px;
+  border: 1px solid;
+}
+ Used two spans to display a break instead of using <br />
+
+.month span {
+  display: block;
+}
+
+table, th, td {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  font-size: 14px;
+  border-collapse: collapse;
+  border: 1px solid;
+  padding: 6px;
+}
+
+th, td {
+  background:#cc0000;
+  color: white;
+}
+
+td:hover{
+  background: black;
+}
+*/
+
+/* ===== START OF NAVRBAR CSS ===== */
+
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  background-color: #cc0000;
+}
+/* IIT navbar */
+.iitName {
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: left;
+  padding: 0 0 0 1em;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* This hides the navbar selector for mobile when it is full screen */
+.topnav .icon {
+  display: none;
+}
+
+
+/* After the minimum width is less than a tablet size (786px) all links 
+will collapse excpect for the welcome page. It will also display the link 
+to open and clsoe the topnav*/
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+/* Here we add the responsive class from our Javascript.
+   The class makes teh top navbar on mobile display all links horizontally*/
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      /*grid-area: 1em;*/ /*this code is not w3c validate*/
+      grid-template-areas: 
+      "top"
+      "text"
+      "center"
+      "text2"
+      "bottom";
+      background-color: #fff;
+      color: #444;
+      
+     
+    }
+    
+    .column1 {
+      grid-area: text;
+    }
+
+    .column2{
+      grid-area: text2;
+    }
+    
+    .header {
+        grid-area: top;
+    }
+
+    .main{
+      grid-area: center;
+    }
+    
+
+    .footer {
+        grid-area: bottom;
+    }
+    
+    .box {
+      background-color: #444;
+      color: #fff;
+      
+      
+     
+    }
+}
+/*welcome----------------------css*/
+.red{
+  color:#cc0000;
+}
+
+a {
+  color:#cc0000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: silver;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.header{
+  grid-column: 1/4;
+  background: grey;
+}
+
+.column1 {
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-row: auto;
+ grid-gap: 1em;
+}
+
+.c1 {
+  background-color: grey;
+}
+
+ 
+.main {
+  grid-column: 2/3;
+}
+
+.main ul li {
+  text-align: left;
+}
+
+.column2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: auto;
+  grid-gap: 1em;
+}
+/* ===== START OF FORM STYLING ===== */
+
+.welcom-from form {
+  display : grid;
+  grid-template-columns : 75px 1fr;
+  grid-gap : 16px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 600px;
+  margin: auto;
+}
+.welcom-from label {
+  grid-column : 1 / 2;
+  font-size : 14px;
+}
+.welcom-from input, button, .block {
+  grid-column : 2 / 3;
+}
+/* ===== START OF CALENDAR CSS ===== */
+
+.calendarContainer{
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.month{
+  text-align: center;
+  background:#cc0000;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color:white;
+  padding:2px;
+  border: 1px solid;
+}
+ /*Used two spans to display a break instead of using <br />*/
+
+.month span {
+  display: block;
+}
+.calendar-itme table, .calendar-itme th,.calendar-itme td {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  font-size: 14px;
+  border-collapse: collapse;
+  border: 1px solid;
+  padding: 6px;
+}
+
+.calendar-itme th,.calendar-itme td {
+  background:#cc0000;
+  color: white;
+}
+
+.calendar-itme td:hover{
+  background: black;
+}
+@media screen and (max-width: 768px) {
+     .wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      /*grid-area: 1em;*/ /*this code is not validate*/
+      grid-template-areas: 
+      "top" 
+      "text"
+      "center"
+      "text2"
+      "bottom";
+      background-color: #fff;
+      color: #444;
+    }
+    
+    .column1 {
+      grid-area: text;
+    }
+
+    .column2{
+      grid-area: text2;
+    }
+    
+    .header {
+        grid-area: top;
+    }
+
+    .main{
+      grid-area: center;
+    }
+    
+
+    .footer {
+        grid-area: bottom;
+    }
+    
+    .box {
+      background-color: #444;
+      color: #fff;
+    }
+
+    .red{
+      color: silver;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color:#cc0000;
+    }
+  
+  /* ===== START OF FORM STYLING ===== */
+
+  .welcom-from form {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-gap: 16px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+  }
+
+  .welcom-from input, select{
+    height: 50px;
+    width: 300px;
+    margin: auto;
+  }
+
+  .welcom-from button {
+    height: 50px;
+    width: 200px;
+    margin: auto;
+  }
+    
+}
+
+@media only screen and (max-width: 480px) {
+  
+ /* ===== START OF FORM STYLING ===== */
+
+ .welcom-from form {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-gap: 16px;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.welcom-from input, select{
+  height: 50px;
+  width: auto;
+  margin-right: auto;
+}
+
+.welcom-from button {
+  height: 50px;
+  width: auto;
+  margin-right: auto;
+}
+  
+}
+
+
+/*schedule--------------------css*/
+/* timetable */
+.timetable table {
+  border-collapse: collapse;
+  text-align: center;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;  
+  table-layout: fixed;
+  margin: auto;
+}
+
+.timetable td {
+  margin: auto;
+  padding: 30px;
+  vertical-align: top;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+
+/* Weekdays (Mon-Sat) */
+.timetable {
+  margin: auto;
+}
+.timetable th {
+  background: #eeeeee none repeat scroll 0 0;
+border-color: #ffffff #cccccc #cccccc;
+border-style: solid;
+border-width: 1px;
+font-weight: bold;
+letter-spacing: 1px;
+margin: auto;
+padding: 1em;
+font-size: 66%;
+}
+
+.timetable td {
+  padding: 1em;
+  border-left: 1px solid #cccccc;
+}
+
+.timetable td:hover {
+  background-color: #eeeeee;
+}
+/* Schedule Header */
+.scheduleHeader {
+  padding: 30px 25px;
+  background: #D67575;
+  text-align: center;
+}
+.scheduleHeader {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside Schedule Header */
+.scheduleHeader a:link { color: white; text-decoration: none;}
+.scheduleHeader a:visited { color: white; text-decoration: none;}
+.scheduleHeader a:hover { color: white; text-decoration: none;}
+.prev {
+  float: left;
+}
+.next {
+  float: right;
+}
+.content {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+/* Here we add the responsive class from our Javascript.
+   The class makes teh top navbar on mobile display all links horizontally*/
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* media query - timetable */
+@media screen and (max-width: 786px) {
+  .timetable {
+    overflow: scroll;
+  }
+ .timetable th {
+    padding: 0.5em;
+    letter-spacing: 0px;
+  }
+  .timetable td {
+    font-size: 0.8em;
+    padding: 0.8em;
+  }
+}
