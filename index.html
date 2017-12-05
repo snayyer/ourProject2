@@ -1,38 +1,48 @@
-﻿
 <!DOCTYPE html>
 <html lang="en" class="nojs">
+
 <head>
-  	<title>Login</title>
-  	<meta charset="utf-8" />
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-	  <link rel="stylesheet" type="text/css"  href="style.css">
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <!-- CSS Reset by using normalize.css-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
     <header>
-	<div id="campus">
-	         <img src="iitcampus.jpg" alt="first">
-   	</div> 
-    <div id="title">
-        <h2>Illinois Institute of Technology</h2>
-    </div>
+        <div id="campus">
+            <img src="images/iitcampus.jpg" alt="first">
+        </div>
+        <div id="title">
+            <h2>Illinois Institute of Technology</h2>
+        </div>
     </header>
-	<div id="wrapper">
-	<form method="get" action="https://thedarkdescent362.github.io/ourProject2/Welcome%20Page/index.html" autocomplete="on">
-  	<fieldset name=" Information">
-     	<p><label>Login:</label></p>
-        <p>
-            <label>User Name: <input type="text" name="user_name_field" ></label>
-	</p>
-	<p>
-            <label>Password: <input type="text" name="password_field" ></label>
-        </p>
-	  <div>
-            <input type="submit" value="Login">
-      </div>
-    
-      </fieldset>
-  </form>
-	</div>
-</body>
-</html>
+    <div id="wrapper" class="log-in">
+        <form method="get" action="welcome.html" autocomplete="on">
+            <fieldset name=" Information">
+                <p>
+                    <label>Login:</label>
+                </p>
+                <p>
+                    <label>User Name:
+                        <input type="text" name="user_name_field">
+                    </label>
+                </p>
+                <p>
+                    <label>Password:
+                        <input type="text" name="password_field">
+                    </label>
+                </p>
+                <div>
+                    <input type="submit" value="Login">
+                </div>
 
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
